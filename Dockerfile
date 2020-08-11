@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY src/install.sh .
 
-RUN apk update && apk add rsync grsync git
+RUN apk update && apk add rsync git
 
 RUN ./install.sh
