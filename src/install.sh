@@ -1,7 +1,7 @@
 mkdir -p /data/scripts /data/bin
 chmod 755 /data/scripts /data/bin
 
-rsync -a rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/linux.x86_64/ /data/bin/
+rsync --inplace -a rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/linux.x86_64/ /data/bin/
 git archive --remote=git://genome-source.soe.ucsc.edu/kent.git \
     --prefix=kent/ HEAD src/hg/utils/automation \
     | tar vxf - -C /data/scripts --strip-components=5 \
