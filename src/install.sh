@@ -12,5 +12,3 @@ git archive --remote=git://genome-source.soe.ucsc.edu/kent.git \
         --exclude='kent/src/hg/utils/automation/lastz_D' \
         --exclude='kent/src/hg/utils/automation/openStack'
 wget -O /data/bin/bedSingleCover.pl 'http://genome-source.soe.ucsc.edu/gitlist/kent.git/raw/master/src/utils/bedSingleCover.pl'
-echo 'export PATH=/data/bin:/data/scripts:$PATH' >> $HOME/.bashrc
-. $HOME/.bashrc
