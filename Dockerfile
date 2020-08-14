@@ -8,4 +8,4 @@ RUN apk update && apk add --no-cache rsync git
 
 RUN ./install.sh
 
-RUN ./obtain.sh
+RUN ./obtain_genome.sh
