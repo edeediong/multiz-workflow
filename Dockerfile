@@ -10,6 +10,6 @@ RUN ./prep.sh
 
 RUN ./obtain_genome.sh
 
-RUN cat DEF
-
 ENTRYPOINT [ "/bin/sh" ]
+
+CMD [ "cat", "DEF" ]
